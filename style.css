@@ -9,9 +9,11 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  background-color: #606060;
 }
 
 a {
+  color: #dadada;
   text-decoration: none;
 }
 
