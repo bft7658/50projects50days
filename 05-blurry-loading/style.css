@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.bg {
+  background: url('./image/cover.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  z-index: -1;
+  /* 由 js 控制 */
+  /* filter: blur(30px); */
+}
+
+.loading-text {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  height: 18px;
+  width: 250px;
+  margin-top: 20px;
+}
+
+.progress-value {
+  border-radius: 15px;
+  background: #fff;
+  height: 18px;
+  width: 0;
+}
