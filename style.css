@@ -9,7 +9,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
   margin: 0;
   background-color: #606060;
 }
