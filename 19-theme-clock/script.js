@@ -5,8 +5,8 @@ const timeEl = document.querySelector('.time')
 const dateEl = document.querySelector('.date')
 const toggle = document.querySelector('.toggle')
 
-const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 toggle.addEventListener('click', (e) => {
   const html = document.querySelector('html')
@@ -20,12 +20,12 @@ toggle.addEventListener('click', (e) => {
 })
 
 function setTime() {
-  const time = new Date();
+  const time = new Date()
   const month = time.getMonth()
   const day = time.getDay()
   const date = time.getDate()
   const hours = time.getHours()
-  const hoursForClock = hours >= 13 ? hours % 12 : hours;
+  const hoursForClock = hours >= 13 ? hours % 12 : hours
   const minutes = time.getMinutes()
   const seconds = time.getSeconds()
   const ampm = hours >= 12 ? 'PM' : 'AM'
